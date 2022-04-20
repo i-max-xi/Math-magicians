@@ -26,6 +26,12 @@ Run the `build` npm script to generate a static production build of your App:
     $ npm run build
 
 
+### Deploy Local
+
+Run the `start` npm script to launch the app locally:
+
+    $ npm start
+
 ### Testing
 
 Run the `test` npm script to launch the test runner:
