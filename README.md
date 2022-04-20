@@ -1,9 +1,9 @@
 # Math Magicians
 
-A calculator app.
+This is a build of a web beased Calculator app.
 
 ## Built With:
-- React app
+- React (SPA)
 
 
 
