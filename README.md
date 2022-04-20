@@ -4,7 +4,37 @@ This is a build of a web beased Calculator app.
 
 ## Built With:
 - React (SPA)
+- JSX
+- CSS
 
+
+### Cloning
+    $ git clone https://github.com/i-max-xi/Math-magicians.git
+
+
+### Installing packages
+
+Run the `install` npm script to update packages:
+
+    $ npm install
+
+
+### Create a production build
+
+Run the `build` npm script to generate a static production build of your App:
+
+    $ npm run build
+
+
+### Testing
+
+Run the `test` npm script to launch the test runner:
+
+    $ npm test
+
+To view test coverage run the `tests-coverage` npm script or gulp task:
+
+    $ npm run tests-coverage
 
 
 👤 **Author** 
