@@ -1,11 +1,8 @@
 import React from "react";
-import "./Component.css";
+import "./Calculator.css";
 
 class Calculator extends React.Component {
-  // constructor(props) {
-  //     super(props);
-  // }
-  // state = {  }
+
   render() {
     return (
       <div>
@@ -33,7 +30,7 @@ class Calculator extends React.Component {
               <div className="orange-flex-item">+</div>
               <div className="orange-flex-item">x</div>
               <div className="orange-flex-item">-</div>
-              <div className="orange-flex-item">+</div>
+              <div className="orange-flex-item">/</div>
               <div className="orange-flex-item">=</div>
           </div>
         </div>
