@@ -5,9 +5,9 @@ class App extends React.Component{
   render() { 
     return (
       <div className="App">
-        <header className="App-header">
-            <Calculator />
-        </header>
+        <div className='wholePage'>
+          <Calculator />
+        </div>
       </div>
     );
   }
