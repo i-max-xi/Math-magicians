@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import calculate from "./Logic/Calculate";
 import "./Calculator.css";
 
 const Calculator = () => {
@@ -36,7 +37,6 @@ const Calculator = () => {
     const calculate = () => {
       setCalc('');
       evaluation();
-      // setResult(eval(calc).toString());
     }
 
     const clearAll = () => {
@@ -53,7 +53,7 @@ const Calculator = () => {
 
         <div className="calc-space">
           <div className="white-grid">
-            <button onClick={clearAll} className="grid-item grid-item-column-1 grid-item-row-1" >AC</button>
+            <button onClick={clearAll } className="grid-item grid-item-column-1 grid-item-row-1" >AC</button>
             <button onClick={ () => updateCalc('+/-')} className="grid-item grid-item-column-2 grid-item-row-1">+/-</button>
             <button onClick={ () => updateCalc('%')} className="grid-item grid-item-column-3 grid-item-row-1">%</button>
             <button onClick={ () => updateCalc('7')} className="grid-item grid-item-column-1 grid-item-row-2">7</button>
