@@ -5,22 +5,38 @@ const Calculator = () => {
     let [calc, setCalc] = useState("");
     let [result, setResult] = useState("");
 
-    const ops = ['/', '*', '+', '-'];
+    const ops = ['/', '*', '+', '-', '%', '.'];
+
+    const evaluation = (value) => {
+      if(eval(calc + value).toString() === 'Infinity'){
+        setResult("Can't divide by 0.");
+      }
+      else if (eval(calc + value).toString() === 'NaN'){
+        setResult("Can't find modulo as can't divide by 0.");
+      }
+      else{
+        setResult(eval(calc + value).toString());
+      }
+    }
 
     const updateCalc = value => {
       if(ops.includes(value) && calc === '' || ops.includes(value) && ops.includes(calc.slice(-1))){
         return;
       }
+
+      
       if (!ops.includes(value)){
-        setResult(eval(calc + value).toString());
+        evaluation(value);
       }
+
       setCalc(calc + value);
   
     }
 
     const calculate = () => {
-      setResult(eval(calc).toString());
       setCalc('');
+      evaluation();
+      // setResult(eval(calc).toString());
     }
 
     const clearAll = () => {
