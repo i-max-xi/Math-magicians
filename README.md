@@ -1,6 +1,6 @@
 # Math Magicians
 
-This is a build of a web beased Calculator app.
+This is a build of a web based Calculator app.
 
 ## Built With:
 - React (SPA)
