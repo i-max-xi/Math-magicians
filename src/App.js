@@ -20,12 +20,6 @@ class App extends React.Component {
           <Route path="*" element = {<ErrorPage />}/>
         </Routes>
       </Router>
-
-      // <div className="App">
-      //   <div className='wholePage'>
-      //     <Calculator />
-      //   </div>
-      // </div>
     );
   }
 }
