@@ -1,6 +1,8 @@
+/* eslint-disable testing-library/prefer-screen-queries */
+/* eslint-disable testing-library/no-node-access */
 import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
-import { render, fireEvent, screen } from '@testing-library/react';
+import { render} from '@testing-library/react';
 import '@testing-library/jest-dom';
 import NavBar from '../Components/NavBar';
 import Quote from '../pages/Quote';
@@ -51,7 +53,7 @@ describe('Navbar Test', () => {
 })
 
 test('render Quote', () => {
-    const { container, getByText} = render(
+    const { container} = render(
         <MemoryRouter>
           <Quote />
         </MemoryRouter>
