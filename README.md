@@ -7,6 +7,8 @@ This is a build of a web based Calculator app.
 - JSX
 - CSS
 
+## Live Deploy
+[Click here](https://mad-math.netlify.app/) to view app in deployment
 
 ### Cloning
     $ git clone https://github.com/i-max-xi/Math-magicians.git
