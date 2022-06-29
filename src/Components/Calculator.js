@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../Styles/Calculator.css";
+import operate from "./logic/Operate";
 
 const Calculator = () => {
     let [calc, setCalc] = useState("");
@@ -8,29 +9,31 @@ const Calculator = () => {
     const ops = ['/', '*', '+', '-', '%', '.'];
 
     const evaluation = (value) => {
-      if(eval(calc + value).toString() === 'Infinity'){
-        setResult("Can't divide by 0.");
-      }
-      else if (eval(calc + value).toString() === 'NaN'){
-        setResult("Can't find modulo as can't divide by 0.");
-      }
-      else{
-        setResult(eval(calc + value).toString());
-      }
+      // if(eval(calc + value).toString() === 'Infinity'){
+      //   setResult("Can't divide by 0.");
+      // }
+      // else if (eval(calc + value).toString() === 'NaN'){
+      //   setResult("Can't find modulo as can't divide by 0.");
+      // }
+      // else{
+      //   setResult(eval(calc + value).toString());
+      // }
+      console.log(typeof calc);
+      console.log(typeof value);
+      console.log(typeof '+');
+      setResult(operate(calc,value,'+'));
     }
 
     const updateCalc = value => {
-      if(ops.includes(value) && calc === '' || ops.includes(value) && ops.includes(calc.slice(-1))){
+      if(ops.includes(value) && calc === ''){
         return;
       }
 
-      
       if (!ops.includes(value)){
         evaluation(value);
       }
 
       setCalc(calc + value);
-  
     }
 
     const calculate = () => {
