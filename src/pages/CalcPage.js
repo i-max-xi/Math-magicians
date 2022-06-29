@@ -3,9 +3,9 @@ import Calculator from '../Components/Calculator';
 import '../Styles/Calculator.css';
 
 const CalcPage = () => (
-  <div className='calcPage'>
+  <div className="calcPage">
     <h2>Let&apos;s do some Math!</h2>
-    <div className='wholeCalc'>
+    <div className="wholeCalc">
       <Calculator />
     </div>
   </div>

@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import calculate from '../Components/logic/Calculate';
 
 describe('Testing for the operate buttons', () => {
