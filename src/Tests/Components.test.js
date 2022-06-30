@@ -1,5 +1,3 @@
-/* eslint-disable testing-library/prefer-screen-queries */
-/* eslint-disable testing-library/no-node-access */
 import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
 import { render} from '@testing-library/react';

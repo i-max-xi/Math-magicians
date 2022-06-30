@@ -1,57 +1,55 @@
 * {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(121, 121, 185);
-    color: white;
-    padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(121, 121, 185);
+  color: white;
+  padding: 10px 30px;
 }
 
 nav {
-    transform: translateY(20px);
+  transform: translateY(20px);
 }
 
-
 nav > ::before {
-    content: "";
-    border-left: 2px solid rgb(167, 167, 167);
-    height: 28px;
-    margin: 5px;
+  content: "";
+  border-left: 2px solid rgb(167, 167, 167);
+  height: 28px;
+  margin: 5px;
 }
 
 nav a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 nav a :active {
-    color: brown;
+  color: brown;
 }
 
-.Home, .Quote {
-    margin: auto;
-    margin-top: 120px;
-    width: 45vw;
-    font-size: 18px;
+.Home,
+.Quote {
+  margin: auto;
+  margin-top: 120px;
+  width: 45vw;
+  font-size: 18px;
 }
 
 .Home > h1 {
-    font-size: 64px;
-
+  font-size: 64px;
 }
 
-.Home > h1, h5 {
-    text-align: center;
+.Home > h1,
+h5 {
+  text-align: center;
 }
 
 .Home > p {
-    padding-left: 100px;
-    
+  padding-left: 100px;
 }
-
 
 .calcPage {
   padding: 20px;
@@ -77,9 +75,9 @@ nav a :active {
 }
 
 .wholeCalc {
-    width: 30vw;
-    height: 40vh;
-    float: right;
+  width: 30vw;
+  height: 40vh;
+  float: right;
 }
 
 .calc-space {
