@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 import operate from '../Components/logic/Operate';
 
 describe('operation tests', () => {
